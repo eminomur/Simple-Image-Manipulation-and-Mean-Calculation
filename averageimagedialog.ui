@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AverageImageDialog</class>
+ <widget class="QDialog" name="AverageImageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>106</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Average Image</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QLabel" name="number_of_items_selected_label">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="delete_the_latest_added_item_button">
+         <property name="text">
+          <string>Delete the Latest Added Item</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clean_all_button">
+         <property name="text">
+          <string>Clean All</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="add_new_item_button">
+         <property name="text">
+          <string>Add New Item</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calculate_button">
+         <property name="text">
+          <string>Calculate</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>delete_the_latest_added_item_button</tabstop>
+  <tabstop>add_new_item_button</tabstop>
+  <tabstop>clean_all_button</tabstop>
+  <tabstop>calculate_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
