@@ -196,9 +196,9 @@ cv::Mat Image::resize_image(const cv::Mat& image)
     cv::Mat result_image;
 
     if (image.rows * image.cols < 300 * 300) {
-        cv::resize(image, result_image, cv::Size(300, 300), cv::INTER_CUBIC);
+        cv::resize(image, result_image, cv::Size(300, 300), 0, 0, cv::INTER_CUBIC);
     } else if (image.rows * image.cols > 300 * 300) {
-        cv::resize(image, result_image, cv::Size(300, 300), cv::INTER_AREA);
+        cv::resize(image, result_image, cv::Size(300, 300), 0, 0, cv::INTER_AREA);
     }
 
     return result_image;
